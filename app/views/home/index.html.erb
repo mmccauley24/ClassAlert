@@ -29,6 +29,7 @@
 				<li class="has-dropdown">
 					<a><%= current_user.email %></a>
 					<ul class="dropdown">
+						<li><%= School.name %></li>
 						<li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
 					</ul>
 				</li>
