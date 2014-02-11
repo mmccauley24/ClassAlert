@@ -17,6 +17,7 @@ end
 # Use sqlite3 as the database for development Active Record
 group :development do
 	gem 'sqlite3', '1.3.8'
+	gem 'rspec-rails'
 end
 
 # Devise for user management
