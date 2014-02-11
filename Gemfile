@@ -19,6 +19,9 @@ group :development do
 	gem 'sqlite3', '1.3.8'
 end
 
+# Devise for user management
+gem 'devise'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
