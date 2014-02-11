@@ -8,11 +8,16 @@ gem 'foundation-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
-# Use postgresql as the database for Active Record
-#gem 'pg'
+# Use postgresql for production database
+group :production do
+	gem 'pg', '0.17.1'
+	gem 'rails_12factor', '0.0.2'
+end
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use sqlite3 as the database for development Active Record
+group :development do
+	gem 'sqlite3', '1.3.8'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
