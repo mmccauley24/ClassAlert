@@ -15,7 +15,7 @@ ClassAlert::Application.configure do
   config.action_controller.perform_caching = true
 
   # Define default url options per Devise instructions
-  config.action_mailer.default_url_options = { :host => 'classalert.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'http://classalert.herokuapp.com' }
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
