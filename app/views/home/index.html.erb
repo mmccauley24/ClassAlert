@@ -61,9 +61,11 @@
 		 <p class="text-center"><i>Why shouldn't you get the best education for your money?</i>
 ― Mark Twain</p>
 	</div>
+	<% if user_signed_in? %>
 	<div>
 		<h1 class="text-center"><%= current_user.school_user.school.name %></h1>
 	</div>
+	<% end %>
 </div>
 
 <div>
