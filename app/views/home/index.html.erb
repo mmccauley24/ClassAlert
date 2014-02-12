@@ -1,5 +1,5 @@
 <% content_for :head do %>
-<meta keywords="zurb foundation learning"/>
+<meta keywords="Class Alert"/>
 <% end %>
 
 <body>
@@ -29,7 +29,6 @@
 				<li class="has-dropdown">
 					<a><%= current_user.email %></a>
 					<ul class="dropdown">
-						<li><%= School.name %></li>
 						<li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
 					</ul>
 				</li>
@@ -61,6 +60,9 @@
 		<h1 class="text-center">Class Alert</h1>
 		 <p class="text-center"><i>Why shouldn't you get the best education for your money?</i>
 ― Mark Twain</p>
+	</div>
+	<div>
+		<h1 class="text-center"><%= current_user.school_user.school.name %></h1>
 	</div>
 </div>
 
